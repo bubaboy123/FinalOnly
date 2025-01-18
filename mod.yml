@@ -27,7 +27,7 @@ assets:
 - name: obj/P_EX100_ULTF.mset
   method: copy
   source:
-  - name: P_EX100_UTLF.mset
+  - name: P_EX100_ULTF.mset
 #Skateboard
 - name: obj/F_TT010.mset
   method: copy

@@ -62,10 +62,10 @@ if true then --Define current values for common addresses
 	PrevPlace = ReadShort(Now+0x30)
 end
 if  World == 0x012 and Room == 0x0E then
-	if ReadByte (Save + 0x3524) ~= 1 and ReadByte (Save + 0x352B) == 0x02 then
-		WriteByte(Save + 0x3524,1)
+	if ReadByte (Save + 0x3524) ~= 5 and ReadByte (Save + 0x352B) == 0x02 then
+		WriteByte(Save + 0x3524,5)
 	end
-	if ReadByte (Save + 0x3524) == 1 and ReadByte (Save + 0x352B) > 0x02 then
+	if ReadByte (Save + 0x3524) == 5 and ReadByte (Save + 0x352B) > 0x02 then
 		WriteByte(Save + 0x3524,0)
 	end
 end
